@@ -1,11 +1,13 @@
 body{
-    background: linear-gradient(180deg, lightblue 50%, cadetblue 100%);
+    background: url('assets/backgound.png');
+    background-repeat: no-repeat;
+    background-size: cover;
     min-height: 100vh;
     font-family:'Shadows Into Light';
 }
 
 .container {
-    background-color: white;
+    background-color:cadetblue;
     width: 400px;
     margin: 50px auto;
     padding: 10px 100px;
@@ -25,7 +27,7 @@ body{
 }
 
 .input-wrapper{
-    border-radius: 20px;
+    border-radius: 30px;
     background-color: aliceblue;
     display: flex;
     justify-content: space-between;
@@ -38,12 +40,19 @@ body{
     border: 0px;
     flex: 1;
     outline: none;
-    padding: 10px 20px;
+    padding: 8px 15px;
+    font-family: 'Shadows Into Light';
+    font-size: 16px;
+}
+
+.inner-wrapper input:focus::placeholder{
+    color: transparent;
 }
 
 .input-wrapper button{
     background-color: lightblue;
     border: 0px;
+    border-radius: 30px;
     color: black;
     font-size: 16px;
     font-family: 'Shadows Into Light';
@@ -51,6 +60,14 @@ body{
     border-radius: 10px;
     cursor: pointer;
     font-weight: bold;
+}
+
+.inner-wrapper button:hover{
+ background-color: #b8dbe7;   
+}
+
+.inner-wrapper button:active{
+    background-color: #cee2e9;
 }
 
 .list{
@@ -95,7 +112,6 @@ body{
     position: absolute;
     background-repeat: no-repeat;
     right: 0;
-    top: 0;
     width: 10%;
     height: 10%;
 }
